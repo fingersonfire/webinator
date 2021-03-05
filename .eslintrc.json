@@ -1,0 +1,90 @@
+{
+	"extends": "eslint:recommended",
+	"globals": {
+		"$": "readonly",
+		"Atomics": "readonly",
+		"after": "writable",
+		"afterEach": "writable",
+		"before": "writable",
+		"beforeEach": "writable",
+		"browser": "readonly",
+		"describe": "writable",
+		"it": "writable",
+		"SharedArrayBuffer": "readonly"
+    },
+	"parser": "babel-eslint",
+	"parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+	},
+	"plugins": [
+		"classPrivateMethods",
+		"sort-class-members"
+	],
+    "rules": {
+		"block-spacing": [
+            "warn",
+            "always"
+		],
+		"brace-style": [
+            "warn",
+            "1tbs", 
+            { "allowSingleLine": true }
+		],
+		"comma-style": [
+            "error",
+            "last"
+        ],
+		"curly": [
+            "error",
+            "all"
+        ],
+        "indent": [
+            "warn",
+			"tab",
+			{ "SwitchCase": 1 }
+		],
+		"keyword-spacing": [
+			"warn",
+			{ "overrides": { 
+				"if": { "after": false }, 
+				"for": { "after": false }, 
+				"while": { "after": false }, 
+				"class": {"after": true}, 
+				"return": {"after": true},
+				"function": {"after": false}
+				}
+			}
+		],
+		"linebreak-style": 0,
+		"no-unused-vars": 0,
+		"no-fallthrough": 0,
+		"no-empty": 0,
+		"no-prototype-builtins": 0,
+        "no-undef": "error",
+		"no-var": "warn",
+		"padded-blocks": [
+			"warn",
+			{ "classes": "always" }
+		],
+        "prefer-const": "warn",
+        "quotes": [
+            "warn",
+			"single",
+			{ "allowTemplateLiterals": true }
+		],
+		"sort-class-members/sort-class-members": [2, {
+			"accessorPairPositioning": "getThenSet",
+			"order": [
+				"constructor",
+				"[conventional-private-properties]",
+				"[static-properties]",
+				"[properties]",
+				"[conventional-private-methods]",
+				"[static-methods]",
+				"[methods]"
+			],
+			"sort": "alphabetical"
+		  }]
+    }
+}

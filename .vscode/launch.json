@@ -1,0 +1,14 @@
+{
+    "version": "0.1.0",
+    "configurations": [
+        {
+            "name": "WebdriverIO",
+            "type": "node",
+            "request": "launch",
+            "args": ["config/debug.conf.js"],
+            "autoAttachChildProcesses": true,
+            "program": "${workspaceRoot}/node_modules/@wdio/cli/bin/wdio.js",
+            "console": "integratedTerminal"
+        }
+    ]
+}

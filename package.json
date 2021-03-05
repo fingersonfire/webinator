@@ -1,0 +1,65 @@
+{
+	"author": "Stone Pack",
+	"babel": {
+		"presets": [
+			[
+				"@babel/preset-env",
+				{
+					"targets": {
+						"node": "current"
+					}
+				}
+			]
+		],
+		"plugins": [
+			"@babel/plugin-proposal-class-properties",
+			"@babel/plugin-proposal-private-methods"
+		]
+	},
+	"dependencies": {
+		"@babel/cli": "^7.2.3",
+		"@babel/core": "^7.2.2",
+		"@babel/preset-env": "^7.2.3",
+		"@babel/register": "^7.0.0",
+		"@types/chai": "^4.1.7",
+		"@types/expect": "^1.20.3",
+		"@wdio/cli": "^6.0.13",
+		"@wdio/sync": "^6.0.12",
+		"chromedriver": "^81.0.0",
+		"deepmerge": "^4.0.0",
+		"file": "^0.2.2",
+		"lodash": "^4.17.4",
+		"sync-request": "^6.1.0",
+		"underscore": "^1.8.3",
+		"webdriverio": "^6.0.18",
+		"xml2json": "^0.12.0"
+	},
+	"description": "Extendable web automation framework using Webdriver.io v6 APIs and ES8",
+	"devDependencies": {
+		"@babel/plugin-proposal-class-properties": "^7.4.4",
+		"@babel/plugin-proposal-private-methods": "^7.8.3",
+		"@wdio/junit-reporter": "^6.0.12",
+		"@wdio/local-runner": "^6.0.13",
+		"@wdio/mocha-framework": "^6.0.13",
+		"@wdio/selenium-standalone-service": "^6.0.12",
+		"babel-eslint": "^10.0.3",
+		"eslint": "^6.6.0",
+		"eslint-plugin-sort-class-members": "^1.7.0",
+		"selenium-standalone": "^6.15.4"
+	},
+	"keywords": [
+		"automation",
+		"selenium",
+		"testing",
+		"web",
+		"webdriverio",
+		"webdriverjs"
+	],
+	"license": "MIT",
+	"main": "index.js",
+	"name": "webinator",
+	"scripts": {
+		"debug": "node_modules/.bin/wdio ./config/debug.conf.js"
+	},
+	"version": "1.0.0"
+}

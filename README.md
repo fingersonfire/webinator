@@ -1,13 +1,4 @@
 # Webinator Automation Framework
-Webinator is a JavaScript(ES8) web automation framework built using WebdriverIO v6 APIs and Mocha.
-
-This framework was built knowing that no website is the same, so why would the same automation work for every site? We've done the heavy lifting to make Mocha and Webdriver adaptable for your system under test. With pre-setup classes for mapping elements and running tests, you can easily modify any of the base functions for each class to suit your needs. By doing this, it gives you the ability to easily adapt the framework itself to your needs.
-
-We also wanted to make it simple for any new automation engineers to pick up and start writing tests. As well as giving room for experienced automaters room to expand everything to make your tests as robust as possible.
-
-This software is under our (Project Brink) garage initiative. This means we will not be updating this repository with any new features or bug fixes. If you would like to contract our time to provide updates or support please send us an email at contact@projectbrink.com.
-<br/>
-<br/>
 
 ## Installation
 The below installation steps assume that you have `brew` installed for Mac or `chocolatey` on Windows and that you have the repository cloned locally. All commands will be ran inside your OS terminal (powershell on Winodws).
